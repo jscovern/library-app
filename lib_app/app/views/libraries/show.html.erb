@@ -1,0 +1,7 @@
+<h2><%=@library.name%></h2>
+<ul>
+	<li>Floor Count: <%=@library.floor_count%></li>
+	<li>Floor Area: <%=@library.floor_area%></li>
+</ul>
+
+<%= button_to "delete", {controller: :libraries, action: 'destroy'}, method: :delete %>

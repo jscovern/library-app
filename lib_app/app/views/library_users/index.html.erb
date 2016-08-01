@@ -1,0 +1,7 @@
+<div><h3><%=@user.first_name %> <%=@user.last_name%></h3>Is a member of the following libraries: </div>
+
+<ul>
+	<%@libraries.each do |library|%>
+		<li><%=library.name%></li>
+	<%end%>
+</ul>

@@ -1,0 +1,10 @@
+<% @libraries.each do |library| %>
+	<div>
+		<h2><%=library.name%></h2>
+		<ul>
+			<li>Floor Count: <%=library.floor_count%></li>
+			<li>Floor Area: <%=library.floor_area%></li>
+		</ul>
+	</div>
+	<%= button_to "Join Library", library_users_path(library.id), {controller: :library_users, action: 'post'} %>
+<%end%>
